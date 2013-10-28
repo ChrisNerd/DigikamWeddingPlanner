@@ -1,0 +1,14 @@
+This program will use your digikam photos to arrange tables at your wedding.
+
+It will read your digikam database and find the number of photos that have your friends in common.  It will attempt to group friends together at your wedding.  The strength of a friendship is proportional to the percentage of photos that they are in together.
+
+To use this program
+1. Create guestlist.txt, a list of guests, exactly as they are tagged in digikam
+2. Run the bash script createAssociationMatrix.sh
+3. Inspect the association matrix
+4. Optionally, add any guests.  People who are coming to the wedding but you do not have tagged in your photos.  Put an entry in extraAssocions.txt for each guest and who you'd like them to sit with.
+5. compile and run the program 
+
+usage:
+
+./createAssociationMatrix.sh > mat.txt && g++ partition.cpp && ./a.out < mat.txt 
