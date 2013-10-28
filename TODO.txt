@@ -1,0 +1,21 @@
+MATIS!!!
+
+Easy to convert to directed graph from undirected graph.  Normalize the weights like before.  Set wab = wba = (wab+wba)/2.  This works because there are 2 cases, a and b are in the same partition, in which case wab and wba are not included in the errorfunction, or they are in different partions and wab+wba is included in the errorfunction.  So if we make wab=wba=their average, we get the same result.
+
+Replace brute force optimizer with Kernignhan-Lin type algorithm.
+
+In Annals of Improbable Research
+Solved using linear programming in MiniZinc
+http://yetanothermathprogrammingconsultant.blogspot.ca/2012/02/weddings-and-optimal-seating.html
+
+
+Consider hyperedges.  For example, maybe there's something about splitting up a family of 3.
+
+Spectral approach.
+
+Allow the user to interactively change the number of seats per table.
+
+Create GUI to all a graphical way of creating extraAssociations.txt, or forcing stronger or weaker relationships, e.g. Bride and Groom must sit together at wedding reception.
+
+Create GUI to graphically show tables, and gray scale bezier link to show strengths of relationships?  Maybe put photo icons instead of names?  Make them draggable to other tables.  Pin them to a table to remove them from consideration by the algorithm.
+
